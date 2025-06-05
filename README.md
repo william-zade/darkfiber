@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NEVER HALFWAY
 
-## Getting Started
+**"They ask why I didn’t quit. I ask what quitting even looks like."**
 
-First, run the development server:
+## 🔥 Mission
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This isn’t a portfolio. This is a manifesto, a toolkit, and a brand built on grit.  
+**NEVER HALFWAY** is the personal site and platform of Bill Zade — veteran, builder, musician, coder. It's built to showcase projects, offer services, and share the story behind the work. No templates, no corporate gloss — just tools forged in heat and honed with intent.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧭 Purpose
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Showcase personal projects, code, music, and media
+- Provide clear, honest freelance services — web, audio, custom builds
+- Create a brand presence for merch, music, and media
+- Tell a real story: service, survival, skill, and staying power
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Audience
 
-## Learn More
+- Developers, indie makers, musicians, veterans
+- People who value capability over credentials
+- Clients who want honesty, not pitch decks
 
-To learn more about Next.js, take a look at the following resources:
+## 💀 Core Ethos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **No shortcuts. No fake shine. Never halfway.**
+- Every pixel, every line, every sound has a reason.
+- Skill over status. Truth over trend.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Visual Identity
 
-## Deploy on Vercel
+Inspired by **Metal Gear Solid HUDs**, **Half-Life UIs**, and **retro terminal gear**, this site embraces:
+- **Dark mode only** — tactical, legible, real
+- **Charcoal, ember orange, radar green** accents
+- **Terminal aesthetics**: scanlines, monospaced fonts, retro overlays
+- **Sharp grid layouts**, dossier-style cards, and “tactile” UI interactions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📐 Site Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Home**: Hero banner + tagline. Immediate identity.
+- **Projects**: Dev cards, GitHub links, code snippets, "why it matters" blurbs.
+- **Music & Media**: Session work, gear lists, embedded audio, studio/live rigs.
+- **Services**: Dev/audio/consulting options with clear pricing and mission-form-style requests.
+- **Store**: Merch hooks (coming later).
+- **About**: Full story in timeline format — raw, real, clean.
+- **Contact**: No BS. No “inquire here.” Just, “Let’s fix it.”
+
+## 🧰 Tech Stack
+
+- **Framework**: Next.js 14+ w/ App Router
+- **Styling**: TailwindCSS + ShadCN UI
+- **Fonts**: Rajdhani, Inter, Roboto Mono
+- **Icons**: Lucide
+- **Email**: Resend or Formspree (or custom SMTP)
+- **Deploy**: Vercel
+- **CI/CD**: GitHub Actions
+
+## 🔧 Status
+
+✅ Brand locked: `NeverHalfway`  
+✅ Visual direction defined  
+🔨 Boilerplate in progress  
+🚧 Feature buildout and content insertion next
+
+---
+
+### ✊ Built by Bill Zade  
+Veteran. Builder. Musician. Coder. Never Halfway.
