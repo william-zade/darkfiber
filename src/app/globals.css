@@ -1,19 +1,86 @@
-/* src/app/globals.css */
+/* globals.css */
 
-/* You can add global custom styles here */
-
-/* For example, set body font and background fallback */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #f8f9fa; /* Bootstrap's bg-light hex */
-  color: #212529; /* Bootstrap's text-dark hex */
+  background-color: #121212; /* dark charcoal */
+  color: #8ef07a; /* radar green text */
+  font-family: 'Roboto Mono', monospace, monospace;
   margin: 0;
   padding: 0;
 }
 
-/* Optional: Customize container padding if you want */
+a {
+  color: #f04e23; /* ember orange */
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  color: #ffa066; /* lighter ember for hover */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  color: #f04e23; /* ember orange headings */
+  margin-top: 0;
+}
+
 .container {
+  max-width: 100%; /* full width — you can constrain later if needed */
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+/* Buttons — Ember Orange Background */
+.btn-primary {
+  background-color: #f04e23;
+  border-color: #f04e23;
+  color: #121212;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #ffa066;
+  border-color: #ffa066;
+  color: #121212;
+}
+
+/* Cards styled like dossier sheets */
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #8ef07a;
+  font-family: 'Roboto Mono', monospace;
+  box-shadow: 0 0 10px rgba(240, 78, 35, 0.3);
+}
+
+/* Grid layout for sharp edges */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Utility class for scanlines overlay effect (optional) */
+.scanlines {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanlines::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+  pointer-events: none;
+  z-index: 10;
 }
