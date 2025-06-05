@@ -1,18 +1,15 @@
-import "./globals.css";
-import { Inter, Orbitron } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-heading" });
-
-export const metadata = {
-  title: "DarkFiber",
-  description: "Never Halfway",
-};
+// src/app/layout.tsx
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './globals.css';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${orbitron.variable}`}>
-      <body className="bg-bg text-white font-sans">{children}</body>
+    <html lang="en">
+      <body className="bg-light text-dark">
+        <div className="container my-4">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
