@@ -2,6 +2,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
 import { Inter, Orbitron } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
@@ -14,8 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} ${orbitron.variable}`}>
-        {children}
+      <body className={`${inter.variable} ${orbitron.variable} d-flex flex-column min-vh-100`}>
+        <Navbar />
+        <main className="container my-5 flex-grow-1">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
