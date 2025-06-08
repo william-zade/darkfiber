@@ -1,9 +1,9 @@
 // app/layout.tsx
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/globals.css";
+import "../../styles/globals.css";
 import { Inter, Orbitron } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
