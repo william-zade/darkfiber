@@ -1,67 +1,90 @@
 # NEVER HALFWAY
 
-**"They ask why I didn’t quit. I ask what quitting even looks like."**
-
-## 🔥 Mission
-
-This isn’t a portfolio. This is a manifesto, a toolkit, and a brand built on grit.  
-**NEVER HALFWAY** is the personal site and platform of Bill Zade — veteran, builder, musician, coder. It's built to showcase projects, offer services, and share the story behind the work. No templates, no corporate gloss — just tools forged in heat and honed with intent.
-
-## 🧭 Purpose
-
-- Showcase personal projects, code, music, and media
-- Provide clear, honest freelance services — web, audio, custom builds
-- Create a brand presence for merch, music, and media
-- Tell a real story: service, survival, skill, and staying power
-
-## 🎯 Audience
-
-- Developers, indie makers, musicians, veterans
-- People who value capability over credentials
-- Clients who want honesty, not pitch decks
-
-## 💀 Core Ethos
-
-- **No shortcuts. No fake shine. Never halfway.**
-- Every pixel, every line, every sound has a reason.
-- Skill over status. Truth over trend.
-
-## 🎨 Visual Identity
-
-Inspired by **Metal Gear Solid HUDs**, **Half-Life UIs**, and **retro terminal gear**, this site embraces:
-- **Dark mode only** — tactical, legible, real
-- **Charcoal, ember orange, radar green** accents
-- **Terminal aesthetics**: scanlines, monospaced fonts, retro overlays
-- **Sharp grid layouts**, dossier-style cards, and “tactile” UI interactions
-
-## 📐 Site Structure
-
-- **Home**: Hero banner + tagline. Immediate identity.
-- **Projects**: Dev cards, GitHub links, code snippets, "why it matters" blurbs.
-- **Music & Media**: Session work, gear lists, embedded audio, studio/live rigs.
-- **Services**: Dev/audio/consulting options with clear pricing and mission-form-style requests.
-- **Store**: Merch hooks (coming later).
-- **About**: Full story in timeline format — raw, real, clean.
-- **Contact**: No BS. No “inquire here.” Just, “Let’s fix it.”
-
-## 🧰 Tech Stack
-
-- **Framework**: Next.js 14+ w/ App Router
-- **Styling**: TailwindCSS + ShadCN UI
-- **Fonts**: Rajdhani, Inter, Roboto Mono
-- **Icons**: Lucide
-- **Email**: Resend or Formspree (or custom SMTP)
-- **Deploy**: Vercel
-- **CI/CD**: GitHub Actions
-
-## 🔧 Status
-
-✅ Brand locked: `NeverHalfway`  
-✅ Visual direction defined  
-🔨 Boilerplate in progress  
-🚧 Feature buildout and content insertion next
+> **"They ask why I didn’t quit. I ask what quitting even looks like."**  
+> — Bill Zade
 
 ---
 
-### ✊ Built by Bill Zade  
-Veteran. Builder. Musician. Coder. Never Halfway.
+## 🔥 Mission
+
+This isn’t a portfolio. It’s a manifesto, a toolkit, and a brand forged in grit.  
+**NEVER HALFWAY** is the personal site of Bill Zade — veteran, builder, musician, coder. No templates, no gloss — just tools and stories honed by intent.
+
+---
+
+## 🧭 Purpose
+
+- Showcase projects: code, builds, music, media  
+- Offer clear, honest freelance services: web, audio, custom builds  
+- Build a brand presence for merch, music, and media  
+- Tell a real story: service, survival, skill, and staying power  
+
+---
+
+## 🎯 Audience
+
+- Developers, indie makers, musicians, veterans  
+- Those who value skill and honesty over credentials and hype  
+- Clients seeking no-nonsense, direct partnerships  
+
+---
+
+## 💀 Core Ethos
+
+- **No shortcuts. No fake shine. Never halfway.**  
+- Every pixel, line, and sound has purpose  
+- Skill over status. Truth over trend  
+
+---
+
+## 🎨 Visual Identity
+
+- Dark mode only: tactical, legible, real  
+- Palette: charcoal, ember orange (#ff6600), radar green accents  
+- Inspired by Metal Gear Solid HUDs, Half-Life UIs, and retro terminal gear  
+- Terminal aesthetics: scanlines, monospace fonts, dossier-style cards  
+- Sharp grids, tactile UI interactions  
+
+---
+
+## 📐 Site Structure
+
+- `/` — Hero banner + tagline  
+- `/projects` — Dev cards, GitHub links, “why it matters” blurbs  
+- `/music-media` — Session work, gear, embedded audio, studio/live rigs  
+- `/services` — Web/audio/consulting options with clear pricing  
+- `/store` — Merch (coming soon)  
+- `/about` — Timeline story — raw and real  
+- `/contact` — Direct contact only, no forms  
+
+---
+
+## 💻 Tech Stack
+
+| Layer        | Tools & Versions                        |
+|--------------|---------------------------------------|
+| Framework    | Next.js 14+ (App Router)               |
+| Styling      | TailwindCSS + ShadCN UI + global CSS  |
+| Fonts        | Orbitron, Inter, Rajdhani, Roboto Mono|
+| Icons        | Lucide                                |
+| Email        | Resend, Formspree, or custom SMTP     |
+| Deployment   | Vercel                                |
+| CI/CD        | GitHub Actions                        |
+| Language     | TypeScript 5.x                        |
+| Version Ctrl | Git + Conventional Commits            |
+
+---
+
+## 🗂 Project Structure
+
+```bash
+/app             # App Router pages
+  ├─ page.tsx    # Hero landing
+  ├─ layout.tsx  # Global layout
+  ├─ about/
+  ├─ contact/
+  ├─ projects/
+  ├─ services/
+  └─ music-media/
+/components      # Reusable UI components
+/styles          # Global styles (Tailwind + overrides)

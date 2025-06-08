@@ -1,18 +1,21 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './globals.css';
+// app/layout.tsx
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/globals.css";
+import { Inter, Orbitron } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
 
 export const metadata = {
-  title: 'NEVER HALFWAY',
-  description: 'A gritty personal site built with grit and intent',
+  title: "NeverHalfway | Bill Zade",
+  description: "Builder. Veteran. Musician. Coder.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="bg-dark text-success scanlines">
-        <main className="container-fluid my-4">
-          {children}
-        </main>
+    <html lang="en" className="dark">
+      <body className={`${inter.variable} ${orbitron.variable}`}>
+        {children}
       </body>
     </html>
   );
