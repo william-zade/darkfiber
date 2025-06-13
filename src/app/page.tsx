@@ -1,3 +1,4 @@
+
 // app/page.tsx
 'use client';
 
@@ -10,7 +11,7 @@ export default function HomePage() {
       <section className="py-5 border-bottom border-danger text-center">
         <h1 className="display-3 fw-bold text-warning">NEVER HALFWAY</h1>
         <p className="lead fst-italic">
-          "They ask why I didn’t quit. I ask what quitting even looks like."
+          &quot;They ask why I didn’t quit. I ask what quitting even looks like.&quot;
         </p>
       </section>
 
@@ -27,7 +28,7 @@ export default function HomePage() {
       {/* Projects */}
       <section className="py-5">
         <h2 className="text-danger">💻 Projects</h2>
-        <div className="row row-cols-1 row-cols-md-2 g-4">
+        <div className="d-flex flex-column flex-md-row gap-4 justify-content-center align-items-stretch">
           <div className="col">
             <div className="card h-100 border border-danger bg-dark text-light">
               <div className="card-body">
