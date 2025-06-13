@@ -1,8 +1,7 @@
-/* globals.css */
-
+/* ───── Bootstrap Import ───── */
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-/* Custom Variables and Overrides */
+/* ───── CSS Variables ───── */
 :root {
   --color-bg: #0c0c0c;
   --color-fg: #f5f5f5;
@@ -14,14 +13,20 @@
   --font-mono: 'Roboto Mono', monospace;
 }
 
+/* ───── Global Layout ───── */
 body {
   background-color: var(--color-bg);
   color: var(--color-fg);
   font-family: var(--font-primary);
   scroll-behavior: smooth;
+  background-image: url('/hero-banner.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-/* Headings */
+/* ───── Typography ───── */
 h1, h2, h3 {
   font-family: var(--font-display);
   text-transform: uppercase;
@@ -42,7 +47,11 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Buttons */
+.text-accent {
+  color: var(--color-accent);
+}
+
+/* ───── Buttons ───── */
 .btn-accent {
   background-color: var(--color-accent);
   color: #000;
@@ -64,22 +73,8 @@ a:hover {
   background-color: var(--color-muted);
   color: white;
 }
-body {
-  background-color: var(--color-bg);
-  color: var(--color-fg);
-  font-family: var(--font-primary);
-  scroll-behavior: smooth;
 
-  background-image: url('/hero-banner.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-.text-accent {
-  color: var(--color-accent);
-}
-
+/* ───── HUD Panels ───── */
 .hud-panel {
   backdrop-filter: blur(4px);
   border: 1px solid var(--color-accent);
@@ -90,4 +85,14 @@ body {
 .hud-panel:hover {
   transform: scale(1.02);
   border-color: var(--color-highlight);
+}
+
+@keyframes slowDrift {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(1.5px); }
+  100% { transform: translateY(0px); }
+}
+
+.hud-floating {
+  animation: slowDrift 6s ease-in-out infinite;
 }

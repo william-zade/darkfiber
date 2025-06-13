@@ -18,11 +18,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="dark">
       <body className={`${inter.variable} ${orbitron.variable} d-flex flex-column min-vh-100`}>
         <Navbar />
-        <main className="container my-5 flex-grow-1">
-          {children}
-        </main>
+          <main className="d-flex flex-column flex-grow-1 px-3">
+            {children}
+          </main>
         <Footer />
       </body>
+
     </html>
   );
 }
