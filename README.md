@@ -88,3 +88,25 @@ This isn’t a portfolio. It’s a manifesto, a toolkit, and a brand forged in g
   └─ music-media/
 /components      # Reusable UI components
 /styles          # Global styles (Tailwind + overrides)
+
+
+
+
+TO-DO List:
+- Add more projects to `/projects`
+- Flesh out `/music-media` with embedded audio
+- Implement `/store` for merch
+- Expand `/about` with more personal history
+- Optimize SEO and performance
+- Add thumbnails for projects
+- Implement contact form with Resend or Formspree
+- Store links for products in the projects section that lead to the store
+- Song samples for `/music-media` in projects
+- Create a blog section for updates
+- Add testimonials or client feedback
+- Add actual links for Social Media platforms
+- Make specific social media links in the footer
+- Create Social Media portfolios for this project
+- Establish a streaming schedule
+- Add Discord and Twitch, maybe even Patreon
+- Comment Section for blog posts
