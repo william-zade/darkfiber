@@ -93,20 +93,39 @@ This isn’t a portfolio. It’s a manifesto, a toolkit, and a brand forged in g
 
 
 TO-DO List:
-- Add more projects to `/projects`
-- Flesh out `/music-media` with embedded audio
-- Implement `/store` for merch
-- Expand `/about` with more personal history
-- Optimize SEO and performance
-- Add thumbnails for projects
-- Implement contact form with Resend or Formspree
-- Store links for products in the projects section that lead to the store
-- Song samples for `/music-media` in projects
-- Create a blog section for updates
-- Add testimonials or client feedback
-- Add actual links for Social Media platforms
-- Make specific social media links in the footer
-- Create Social Media portfolios for this project
-- Establish a streaming schedule
-- Add Discord and Twitch, maybe even Patreon
-- Comment Section for blog posts
+## 🚧 Core Pages
+
+- [x] Home Page complete
+- [ ] Add more projects to `/projects`
+- [ ] Flesh out `/music-media` with embedded audio
+- [ ] Expand `/about` with timeline details
+
+## 🛒 Store Features
+
+- [x] Scaffold `/store` page with product cards
+- [ ] Add Stripe and PayPal checkout integration
+- [ ] Create dropdown nav menu for store categories (Music, Tools, Merch)
+- [ ] Add product preview modals (images/audio)
+- [ ] License/download policy UI
+
+## 🎧 Music/Media Features
+
+- [ ] Looping background audio with mute toggle
+- [ ] Add audio players to `/music-media`
+- [ ] Link music projects to store for purchase
+- [ ] Create a Bandcamp/DistroKid replacement pipeline
+
+## 📢 Outreach & Engagement
+
+- [ ] Add testimonials / client feedback section
+- [ ] Add footer links to Discord, Twitch, Patreon
+- [ ] Social media link components + profiles
+- [ ] Build blog system (with comments)
+
+## 🧠 UI Polish / UX Goals
+
+- [ ] Sticky HUD-style nav overlay
+- [ ] Ambient parallax background
+- [ ] Glitch/scanline effects
+- [ ] SEO optimization + performance tweaks
+
