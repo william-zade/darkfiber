@@ -4,6 +4,8 @@ import "../styles/globals.css";
 import { Inter, Orbitron } from "next/font/google";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });

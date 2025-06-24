@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top border-bottom border-danger shadow">
       <div className="container">
         <Link href="/" className="navbar-brand" style={{ fontFamily: 'var(--font-display)' }}>
           NeverHalfway

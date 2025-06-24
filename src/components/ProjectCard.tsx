@@ -1,37 +1,25 @@
-// components/ProjectCard.tsx
+// src/components/ProjectCard.tsx
+import React from "react";
 
-import Image from "next/image";
-import { FC } from "react";
-
-interface ProjectCardProps {
+interface ProjectProps {
   title: string;
   description: string;
-  imageUrl: string;
-  link?: string;
+  image: string;
+  link: string;
+  cta: string;
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ title, description, imageUrl, link }) => {
+export default function ProjectCard({ title, description, image, link, cta }: ProjectProps) {
   return (
-    <div className="card h-100 shadow-sm border-0">
-      <Image
-        src={imageUrl}
-        className="card-img-top"
-        alt={`${title} image`}
-        width={600}
-        height={400}
-        style={{ objectFit: "cover", maxHeight: "250px" }}
-      />
+    <div className="card h-100 bg-dark text-light border border-danger hud-panel hud-floating">
+      <img src={image} className="card-img-top" alt={`${title} thumbnail`} />
       <div className="card-body d-flex flex-column">
-        <h5 className="card-title text-uppercase text-orange fw-bold">{title}</h5>
+        <h5 className="card-title text-accent">{title}</h5>
         <p className="card-text flex-grow-1">{description}</p>
-        {link && (
-          <a href={link} className="btn btn-accent mt-3 align-self-start">
-            View Project
-          </a>
-        )}
+        <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn-outline-accent mt-auto">
+          {cta}
+        </a>
       </div>
     </div>
   );
-};
-
-export default ProjectCard;
+}
