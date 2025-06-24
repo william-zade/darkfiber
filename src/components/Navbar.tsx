@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top border-bottom border-danger shadow">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top border-bottom border-danger">
       <div className="container">
         <Link href="/" className="navbar-brand" style={{ fontFamily: 'var(--font-display)' }}>
           NeverHalfway
@@ -22,24 +22,19 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto" style={{ fontFamily: 'var(--font-primary)' }}>
             <li className="nav-item">
-              <Link href="/about" className="nav-link">
-                About
-              </Link>
+              <Link href="/about" className="nav-link">About</Link>
             </li>
             <li className="nav-item">
-              <Link href="/projects" className="nav-link">
-                Projects
-              </Link>
+              <Link href="/projects" className="nav-link">Projects</Link>
             </li>
             <li className="nav-item">
-              <Link href="/services" className="nav-link">
-                Services
-              </Link>
+              <Link href="/services" className="nav-link">Services</Link>
             </li>
             <li className="nav-item">
-              <Link href="/contact" className="nav-link">
-                Contact
-              </Link>
+              <Link href="/contact" className="nav-link">Contact</Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/store" className="nav-link text-accent">Store</Link> {/* Highlighted */}
             </li>
           </ul>
         </div>
