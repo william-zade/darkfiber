@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
-  apiVersion: '2022-11-15',
+  apiVersion: '2025-05-28.basil',
 });
 
 export async function POST(req: NextRequest) {
@@ -35,8 +35,9 @@ export async function POST(req: NextRequest) {
     });
 
     return NextResponse.json({ id: session.id, url: session.url });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Checkout API error:', error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    const message = error instanceof Error ? error.message : 'An unknown error occurred';
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

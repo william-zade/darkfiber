@@ -2,7 +2,15 @@
 import React from 'react';
 import StoreProductCard from '@/components/StoreProductCard';
 
-const products = [
+type Product = {
+  title: string;
+  description: string;
+  image: string;
+  price: number;
+  status: 'available' | 'coming-soon';
+};
+
+const products: Product[] = [
   {
     title: 'Echoes of a Dying Star',
     description: 'Doom EP — ambient collapse in Drop A',

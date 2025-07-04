@@ -129,3 +129,31 @@ TO-DO List:
 - [ ] Glitch/scanline effects
 - [ ] SEO optimization + performance tweaks
 
+## 🎵 Digital Storefront
+
+The DarkFiber store is now live with full Stripe Checkout integration.
+
+### ✅ Features
+- Secure payments via [Stripe](https://stripe.com)
+- Product cards with title, description, price, and image
+- "Buy Now" button for instant checkout (available products only)
+- Graceful fallback for items marked as "Coming Soon"
+- Success and cancel redirect pages
+
+### 🛒 Live Demo
+Visit the store at: [http://localhost:3000/store](http://localhost:3000/store) (or your production URL)
+
+### 🔐 Notes
+- This uses test mode Stripe keys by default
+- To go live:
+  1. Replace the keys in `.env.local` with your **live** keys
+  2. Ensure your product metadata is set up in Stripe
+  3. Use **absolute image URLs** if you want product previews on Stripe Checkout
+
+---
+
+## 💡 License & Download Support (coming soon)
+Plans to add:
+- License terms per product
+- Digital download delivery
+- Search & categories
