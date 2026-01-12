@@ -32,7 +32,7 @@ export default function ContactPage() {
           </li>
         </ul>
 
-        <p className="text-muted mt-4">
+        <p className="text-pretty mt-4">
           I respond quickly. Direct, personal contact only — no agents, no inboxes of doom.
         </p>
       </SectionPanel>
