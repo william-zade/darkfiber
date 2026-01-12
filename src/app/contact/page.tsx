@@ -21,13 +21,13 @@ export default function ContactPage() {
           <li className="mb-3">
             <Github className="me-2 text-accent" />
             <a href="https://github.com/william-zade" target="_blank" className="text-accent">
-              github.com/yourusername
+              github.com/william-zade
             </a>
           </li>
           <li className="mb-3">
             <Music className="me-2 text-accent" />
             <a href="https://bandcamp.com/yourproject" target="_blank" className="text-accent">
-              bandcamp.com/yourproject
+              bandcamp.com/lastchoirofash
             </a>
           </li>
         </ul>
