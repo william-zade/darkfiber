@@ -20,7 +20,7 @@ export default function ContactPage() {
           </li>
           <li className="mb-3">
             <Github className="me-2 text-accent" />
-            <a href="https://github.com/yourusername" target="_blank" className="text-accent">
+            <a href="https://github.com/william-zade" target="_blank" className="text-accent">
               github.com/yourusername
             </a>
           </li>
